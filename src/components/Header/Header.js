@@ -1,9 +1,9 @@
 import Link from 'next/link';
 import React from 'react';
-import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
 import { DiCssdeck } from 'react-icons/di';
+import SocialIcons from '../SocialIcons/SocialIcons';
 
-import { Container, Div1, Div2, Div3, NavLink, SocialIcons } from './HeaderStyles';
+import { Container, Div1, Div2, Div3, NavLink } from './HeaderStyles';
 
 const Header = () => (
   <Container>
@@ -32,15 +32,7 @@ const Header = () => (
       </li>
     </Div2>
     <Div3>
-      <SocialIcons href="http://github.com/chingsley" target='branch'>
-        <AiFillGithub size="3rem" />
-      </SocialIcons>
-      <SocialIcons href="https://linkedin.com/in/kingsley-eneja-3a376a160" target='branch'>
-        <AiFillLinkedin size="3rem" />
-      </SocialIcons>
-      <SocialIcons href="https://www.instagram.com/" target='branch'>
-        <AiFillInstagram size="3rem" />
-      </SocialIcons>
+      <SocialIcons shouldWrap={false} />
     </Div3>
   </Container>
 );
